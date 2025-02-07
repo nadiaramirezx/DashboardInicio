@@ -1,0 +1,69 @@
+/* TeamsList.css */
+
+.teams-list-wrapper {
+  display: flex;
+  margin-top: -25%;
+  width: 130%;
+  padding: 20px;
+}
+
+.teams-list {
+  padding: 20px;
+  width: 33%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.139);
+}
+
+.teams-list h2 {
+  margin-bottom: 20px;
+  color: #5a3e36;
+}
+
+.team-table {
+ margin-left: 15px;
+ border-radius: 6px;
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 500px;
+}
+
+.team-table th,
+.team-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #decdbf;
+}
+
+.team-table th {
+  background-color: #91735b;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.team-table tbody tr {
+  background-color: #847667;
+  color: white;
+}
+
+.team-table tbody tr:nth-child(even) {
+  background-color: #847667;
+}
+
+.team-table tbody tr:hover {
+  background-color: #eedbc9;
+}
+
+.edit-cell {
+  text-align: right;
+}
+
+.edit-link {
+  color: #5a3e36;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.edit-link:hover {
+  text-decoration: underline;
+}

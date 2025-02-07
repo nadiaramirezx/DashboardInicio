@@ -1,0 +1,137 @@
+/* RecentProjects.css */
+
+.recent-projects {
+  padding: 30px;
+  background-color: #817c5abb;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+  padding: 15px 20px;
+  background-color: #3f271b90;
+  border: 1px solid #dddddd6f;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  background-color: #3f271bd3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-name {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+}
+
+.project-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 1em;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.project-status.in-progress {
+  background-color: #ffc107;
+  margin-right: 20px;
+  width: 180px;
+}
+
+.project-status.completed {
+  background-color: #28a745;
+  margin-left: 35px;
+  width:180px;
+}
+
+.project-status.pending {
+  background-color: #dc3545;
+  margin-right: 45px;
+  width: 180px;
+}
+
+.project-updated {
+  font-size: 0.95em;
+  color: white;
+  margin-top: 5px;
+}
+.button-edit{
+  border-radius: 8px;
+  background-color: #745318c5;
+  border-color: #33333324;
+}
+
+.edit-form {
+  margin-top: 30px;
+  padding: 25px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.edit-form:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.edit-form h2 {
+  margin-top: 0;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #555;
+}
+
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.edit-form input:focus,
+.edit-form textarea:focus {
+  border-color: #007bff;
+}
+
+.edit-form button {
+  padding: 12px 18px;
+  font-size: 1.1em;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.edit-form button:active {
+  transform: translateY(0);
+}

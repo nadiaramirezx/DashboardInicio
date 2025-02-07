@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #623307;
+  --color-secondary: #a06c3f;
+  --color-dark: #5f463a;
+  --color-light: #e8cb9a;
+  --color-bg: #ffedba;
+  --color-text: #fff;
+  --color-in-progress: #f4b400;
+  --color-completed: #4caf50;
+  --color-pending: #e91e63;
+}
+
+.project-summary {
+  background: var(--color-dark);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  color:white;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.406);
+}
+

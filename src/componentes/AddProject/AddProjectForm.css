@@ -1,0 +1,50 @@
+.add-project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #85794b; /* Color crema */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(78, 77, 77, 0.228);
+  transition: transform 0.2s;
+  width: 37%;
+}
+
+.add-project-form:hover {
+  transform: scale(1.02);
+}
+
+.add-project-form input,
+.add-project-form select {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #c1a16b; /* Color marrón claro */
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.add-project-form input:focus,
+.add-project-form select:focus {
+  border-color: #8b5a2b; /* Color marrón oscuro */
+  outline: none;
+}
+
+.add-project-form button {
+  padding: 8px 8px;
+   background-color: #8b5a2b; /* Color marrón oscuro */
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 14px;
+   transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.add-project-form button:hover {
+  background-color: #5c4033; /* Color marrón café */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ 

@@ -1,0 +1,2 @@
+npm install @radix-ui/react-slot class-variance-authority clsx tailwindcss-animate lucide-react
+npm install react-table

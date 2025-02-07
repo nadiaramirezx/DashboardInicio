@@ -1,0 +1,53 @@
+/* ProjectCard.css */
+
+.project-card {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.project-header h3 {
+  margin: 0;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  color: #fff;
+}
+
+.status.open {
+  background-color: #28a745;
+}
+
+.status.closed {
+  background-color: #dc3545;
+}
+
+.status.in-progress {
+  background-color: #ffc107;
+}
+
+.project-details {
+  margin-top: 10px;
+}
+
+.project-details small {
+  display: block;
+  margin-bottom: 5px;
+}
+
+strong {
+  color: #333;
+}

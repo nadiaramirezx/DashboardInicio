@@ -1,0 +1,5 @@
+Instalar React Bootstrap
+npm install react-bootstrap bootstrap
+
+Agrega Bootstrap en src/main.tsx:
+import "bootstrap/dist/css/bootstrap.min.css";

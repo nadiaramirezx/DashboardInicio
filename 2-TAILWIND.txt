@@ -1,0 +1,17 @@
+importar tailwind css
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+AGREGAR EN TAILWIND.CONFIG.JS:
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+EN SRC/INDEX.CSS:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
