@@ -2,31 +2,33 @@
 
 .teams-list-wrapper {
   display: flex;
-  margin-top: -25%;
-  width: 130%;
-  padding: 20px;
+  margin-top: -33%;
+  background-color:#624b3b;
+  border-radius: 8px;
+  width: 34rem ;
+  margin-bottom: 40px;
+  margin-left: 2%;
+  
+  
 }
 
 .teams-list {
-  padding: 20px;
-  width: 33%;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.139);
+padding: 20px;
+ width: 60%;
+ margin-left: 6%;
 }
 
 .teams-list h2 {
-  margin-bottom: 20px;
-  color: #5a3e36;
+  margin-bottom: 5px;
+  color: #f9f8f8;
 }
 
 .team-table {
- margin-left: 15px;
- border-radius: 6px;
+  width: 100%; /* Ajustar el ancho de la tabla al 100% del contenedor */
+  border-radius: 6px;
   border-collapse: collapse;
   margin-top: 10px;
-  width: 500px;
 }
-
 .team-table th,
 .team-table td {
   padding: 12px 15px;
@@ -35,23 +37,19 @@
 }
 
 .team-table th {
-  background-color: #91735b;
+  background-color: #5d4531;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .team-table tbody tr {
-  background-color: #847667;
+  background-color: #706355;
   color: white;
 }
 
 .team-table tbody tr:nth-child(even) {
-  background-color: #847667;
-}
-
-.team-table tbody tr:hover {
-  background-color: #eedbc9;
+  background-color: #706355;
 }
 
 .edit-cell {

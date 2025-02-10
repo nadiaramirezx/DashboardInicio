@@ -12,16 +12,31 @@ const AddProjectForm: React.FC<Props> = ({ show, onHide, onAddProject }) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [status, setStatus] = useState<"In Progress" | "Completed" | "Pending">("Pending");
+  const [team, setTeam] = useState("");
+  const [progress, setProgress] = useState<number>(0);
+  const [dueDate, setDueDate] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim()) return alert("El nombre del proyecto es obligatorio");
 
-    onAddProject({ name, description, status });
+    onAddProject({
+      name,
+      description,
+      status,
+      team,
+      progress,
+      dueDate,
+    });
+
+    // Limpiar formulario y cerrar modal
     setName("");
     setDescription("");
     setStatus("Pending");
-    onHide(); // Cerrar modal después de guardar
+    setTeam("");
+    setProgress(0);
+    setDueDate("");
+    onHide();
   };
 
   return (
@@ -59,6 +74,36 @@ const AddProjectForm: React.FC<Props> = ({ show, onHide, onAddProject }) => {
               <option value="In Progress">En Progreso</option>
               <option value="Completed">Completado</option>
             </Form.Select>
+          </Form.Group>
+
+          <Form.Group className="mb-3">
+            <Form.Label>Equipo</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Ingrese el equipo"
+              value={team}
+              onChange={(e) => setTeam(e.target.value)}
+            />
+          </Form.Group>
+
+          <Form.Group className="mb-3">
+            <Form.Label>Progreso (%)</Form.Label>
+            <Form.Control
+              type="number"
+              placeholder="Ingrese el progreso"
+              value={progress}
+              onChange={(e) => setProgress(Number(e.target.value))}
+            />
+          </Form.Group>
+
+        
+          <Form.Group className="mb-3">
+            <Form.Label>Fecha de Inicio</Form.Label>
+            <Form.Control
+              type="date"
+              value={dueDate}
+              onChange={(e) => setDueDate(e.target.value)}
+            />
           </Form.Group>
 
           <div className="d-flex justify-content-end">

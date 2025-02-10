@@ -3,21 +3,9 @@
 .dashboard {
   font-family: 'Arial', sans-serif;
   padding: 20px;
-  background-color: #4f452c;
+  background-color: #b88b5c;
   min-height: 80vh;
   
-}
-
-.dashboard-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #817547;
-  padding: 20px;
-  border-radius: 8px;
-  color: #fff;
-  margin-bottom: 30px;
-  height:150px;
 }
 
 .dashboard-header h2 {
@@ -34,6 +22,7 @@
   margin-top: 10px;
   width: 50%;
   margin-left: 50%;
+  
 }
 
 .project-grid {
@@ -49,12 +38,9 @@
 
 .btn-primary {
   font-size: 1em;
-  margin-left: 90%;
   padding: 12px 10px;
-  background-color: #805a1dc0;
   border: none;
   border-radius: 8px;
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }

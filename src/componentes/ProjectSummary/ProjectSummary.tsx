@@ -1,5 +1,5 @@
 import React from "react";
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LabelList } from "recharts";
 import type { Project } from "../Dashboardd/Dashboard";
 import "./ProjectSummary.css";
 
@@ -21,14 +21,18 @@ const ProjectSummary: React.FC<ProjectSummaryProps> = ({ projects }) => {
   return (
     <div className="project-summary">
       <h2>Estados</h2>
-      <ResponsiveContainer width="100%" height={220}>
-        <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
-          <CartesianGrid strokeDasharray="4 4" />
-          <XAxis dataKey="name" />
-          <YAxis />
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart 
+        data={data}
+        layout="vertical"
+         margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis type="number" />
+          <YAxis dataKey="name" type="category" />
           <Tooltip />
           <Legend />
           <Bar dataKey="Total" fill="#fad37d" />
+          <LabelList dataKey="Total" position="insideRight"/>
         </BarChart>
       </ResponsiveContainer>
     </div>
